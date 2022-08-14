@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+*.bak
 
 # Test binary, built with `go test -c`
 *.test
@@ -12,11 +13,5 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-vendor/
-
-pkg/coloredcobra/vendor
-tdf/scratch.go.old
-vendor
-main2.go.old
-tdfgo
-cmd/help.go.crap
+# vendor/
+.vscode/
