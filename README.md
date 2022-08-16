@@ -86,7 +86,7 @@ tdfgo watch 'cat /proc/loadavg | cut -d" " -f 1'
 
 ### `Fonts`
 
-![fonts preview](assets/fonts-list.png)
+![fonts preview](assets/tdfgo-fonts.png)
 
 List all available fonts found in the default directories
 
