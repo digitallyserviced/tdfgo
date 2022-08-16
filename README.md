@@ -6,7 +6,9 @@
 </h1>
 
 <div align="center">
-TDFGO
+<div align="center">
+<img style="margin:6px;" src="./assets/tdfgocast.gif">
+</div>
   <br />
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br />
@@ -20,21 +22,37 @@ TDFGO
 
 <div align="center">
 <br />
-
 [![Project license](https://img.shields.io/github/license/digitallyserviced/tdfgo.svg?style=flat-square)](LICENSE)
 
 [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/digitallyserviced/tdfgo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+
 [![code with love by digitallyserviced](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-digitallyserviced-ff1414.svg?style=flat-square)](https://github.com/digitallyserviced)
 
 </div>
 
+<details open="open">
+<summary>Table of Contents</summary>
 
+- [About](#about)
+  - [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Support](#support)
+- [Project assistance](#project-assistance)
+- [Contributing](#contributing)
+- [Authors & contributors](#authors--contributors)
+- [Security](#security)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-<div align="center">
-<img style="margin:6px;" src="./assets/tdfgocast.gif">
-</div>
+</details>
 
-## tdfgo
+---
+
+## About
 
 [TheDraw](https://en.wikipedia.org/wiki/TheDraw) font parser and console text renderer. This utility was inspired by the [`tdfiglet`](https://github.com/tat3r/tdfiglet) CLI utility. I wanted to also use the fonts in another utility I am working on. 
 
@@ -42,9 +60,7 @@ TDFGO
 
 `tdfiglet` was missing some features and the ability to use more than a single font per file. I realized there was multiple fonts with different color schemes in some of them as well as font packs containing files with lots of different fonts within one font file.
 
-> The CLI utility and library currently only support **COLOR** font types. **BLOCK** and **OUTLINE** will fail with a note.
-
-*Features*
+### Features
 
 - Render __TheDraw__ fonts in the terminal
 - Supports **COLOR** font types only as they are more plentiful and cooler looking
@@ -59,8 +75,44 @@ TDFGO
 - Shell completion of all flags and commands, completion of font file names found, completion of fonts found within a single font file 
 <!-- ![tdfgo gif preview](assets/tdfgo-preview.gif) -->
 
+<details>
+<summary>Screenshots</summary>
+<br>
 
-### Rendering Text Options 
+> **[?]**
+> Please provide your screenshots here.
+
+|                               Home Page                               |                               Login Page                               |
+| :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
+| <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
+
+</details>
+
+### Built With
+
+> Go 1.18
+> Neovim
+> Arch Linux
+
+## Getting Started
+
+### Prerequisites
+
+> Go 1.18
+
+### Installation
+
+> **[?]**
+> Clone the repo and get started
+
+```bash
+git clone https://github.com/digitallyserviced/tdfgo.git
+cd tdfgo
+go build
+./tdfgo fonts -vp -t YOURTEXT
+```
+
+## Usage
 
 ![help preview](assets/tdfgo-help.png)
 
@@ -165,19 +217,44 @@ tdfgo fonts -p -X -t "!@#$JDKALFK@{}"
 - `~/.config/tdfgo/fonts`
 - Built-in (There are two fonts `mindstax.tdf` and `yazoox.tdf` embedded within the binary for use anywhere)
 
-### Options
+## Support
 
-```
-  -w, --columns int      Specify the amount of columns or width that the text will be rendered into (default 80)
-  -f, --font string      Specify font to use for TEXT if multiple uses first (default "mindstax")
-  -i, --fontIndex int    If multiple fonts per file specify the index of the font to use (default 0)
-  -h, --help             help for tdfgo
-  -j, --justify string   Specify the justification for rendered content, computes padding if necessary given current terminal width. {left, center, justify} (default "left")
-  -m, --monochrome       Render text in monochrome by stripping color escape sequences. Will then be using the default foreground color
-  -r, --random           Use a random font as the selected font when rendering text content
-  -W, --spaceWidth int   Set the spacing for a space character in the text provided (default 3)
-  -s, --spacing int      Override the fonts own specified spacing used between characters. (default -1)
-  -v, --verbose          Print more information about fonts
-```
+Reach out to the maintainer at one of the following places:
 
+- [GitHub issues](https://github.com/digitallyserviced/tdfgo/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
+- Contact options listed on [this GitHub profile](https://github.com/digitallyserviced)
+
+## Project assistance
+
+If you want to say **thank you** or/and support active development of TDFGO:
+
+- Add a [GitHub Star](https://github.com/digitallyserviced/tdfgo) to the project.
+- Tweet about the TDFGO.
+- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+
+Together, we can make TDFGO **better**!
+
+## Contributing
+
+First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
+
+## Authors & contributors
+
+The original setup of this repository is by [DigitallyServiced](https://github.com/digitallyserviced).
+
+For a full list of all authors and contributors, see [the contributors page](https://github.com/digitallyserviced/tdfgo/contributors).
+
+## License
+
+This project is licensed under the **Creative Commons**.
+
+See [LICENSE](LICENSE) for more information.
+
+## Acknowledgements
+
+> https://github.com/tat3r/tdfiglet
+
+> [Neovim](https://github.com/neovim/neovim)
+
+> [wezterm](https://github.com/wez/wezterm)
 
