@@ -1,3 +1,5 @@
+<img align="center" style="margin:6px;" src="./assets/tdfgocast.gif">
+
 ## tdfgo
 
 [TheDraw](https://en.wikipedia.org/wiki/TheDraw) font parser and console text renderer. This utility was inspired by the [`tdfiglet`](https://github.com/tat3r/tdfiglet) CLI utility. I wanted to also use the fonts in another utility I am working on. 
@@ -86,7 +88,7 @@ tdfgo watch 'cat /proc/loadavg | cut -d" " -f 1'
 
 ### `Fonts`
 
-![fonts preview](assets/tdfgo-fonts.png)
+![fonts preview](assets/fonts-list.png)
 
 List all available fonts found in the default directories
 
