@@ -41,9 +41,8 @@ var Model = struct {
 // watchCmd represents the watch command
 var watchCmd = &cobra.Command{
 	Use:   "watch [-i interval] CMD args...",
-	Short: "Run a command and use the output as text to print using defined font",
+	Short: "Repeat a command and use the output as text to print using defined font",
 	Long:  `Run a command every # interval and use the output as the text rendered using a font`,
-	// Example: ,
 	Run: func(cmd *cobra.Command, args []string) {
 		StartScreen()
 		interval, err := cmd.Flags().GetDuration("interval")
@@ -57,7 +56,7 @@ var watchCmd = &cobra.Command{
 				panic(err)
 			}
 			go watchLoop(interval, NewCmd(args))
-			if err := Model.app.SetRoot(Model.textView, true).Run(); err != nil {
+			if err := Model.app.SetRoot(Model.flexV, true).Run(); err != nil {
 				panic(err)
 			}
 		}
@@ -79,24 +78,9 @@ func watchLoop(interval time.Duration, watchCmd *cmd.Cmd) {
 }
 
 func init() {
-
-	// tags := color.GetColorTags()
-	// tags["fg=242"] = "0;242"
 	watchCmd.Example = color.Render(watchExamples)
 	rootCmd.AddCommand(watchCmd)
-
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// watchCmd.PersistentFlags().String("foo", "", "A help for foo")
-	// watchCmd.Flags().StringP("cmd", "c", "", "A help for foo")
-	// watchCmd.Flags().Float32P("interval", "n", 1.0, "Seconds between command executions (can be fractions of a second)")
 	watchCmd.Flags().DurationP("interval", "n", 1*time.Second, "Interval between executions of the specified command")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// watchCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
 func StartScreen() {
@@ -110,15 +94,16 @@ func StartScreen() {
 	Model.app.SetScreen(Model.scr)
 
 	Model.flexV = tview.NewFlex()
-	Model.flexV.SetDirection(tview.FlexColumn)
+	Model.flexV.SetDirection(tview.FlexRow)
 
 	Model.textView = tview.NewTextView()
 	Model.textView.SetDynamicColors(true)
 
-	Model.flexV.AddItem(nil, 0, 1, false)
-	Model.flexV.AddItem(Model.textView, 0, 14, false)
-	Model.flexV.AddItem(nil, 0, 1, false)
+	Model.flexV.AddItem(nil, 0, 2, false)
+	Model.flexV.AddItem(Model.textView, 0, 4, false)
+	Model.flexV.AddItem(nil, 0, 2, false)
 }
+
 func RunCmd(cmd *cmd.Cmd) string {
 	status := cmd.Start()
 	stat := <-status

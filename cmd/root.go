@@ -25,7 +25,6 @@ import (
 
 var useFont *tdf.TheDrawFont
 
-// rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "tdfgo [-f font] [] TEXT",
 	Short: "TheDraw font console printer",
@@ -46,7 +45,7 @@ var rootCmd = &cobra.Command{
 		}
 		var fontInfo *tdf.FontInfo
 		if random {
-			rand.Seed(time.Now().Unix())
+			rand.Seed(time.Now().UnixNano())
 			fontInfos := tdf.GetFonts("")
 			fontInfo = lo.Sample(fontInfos)
 			if fontInfo == nil {
@@ -59,7 +58,6 @@ var rootCmd = &cobra.Command{
 			}
 		}
 		tdff, err := tdf.LoadFont(fontInfo)
-		// tdff, err := tdf.LoadBuiltinFont("mindstax", &builtinFontsFiles)
 		if err != nil {
 			panic(err)
 		}
@@ -151,7 +149,8 @@ func Execute() {
 		NoExtraNewlines: true,
 	})
 
-	tdff, err := tdf.LoadBuiltinFont("mindstax", &tdf.BuiltinFontsFiles)
+  rootCmd.Flags().SortFlags = false
+	tdff, err := tdf.LoadBuiltinFont("yazoox", &tdf.BuiltinFontsFiles)
 	if err != nil {
 		panic(err)
 	}

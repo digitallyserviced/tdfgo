@@ -29,10 +29,9 @@ var printCmd = &cobra.Command{
 		// var stdinData []byte
 		argTxt := strings.Join(args, " ")
 		stdin := cmd.InOrStdin()
-		if stdin != nil {
+		if len(argTxt) == 0 && stdin != nil {
 			stdinData, err := ioutil.ReadAll(stdin)
 			if err == nil {
-				// fmt.Printf("%s", stdinData)
 				if len(argTxt) == 0 {
 					argTxt = fmt.Sprintf("%s", stdinData)
 				}

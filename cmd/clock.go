@@ -21,30 +21,17 @@ import (
 // clockCmd represents the clock command
 var clockCmd = &cobra.Command{
 	Use:   "clock",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+  Short: "Run the watch command with the time format H:m:S",
 	Run: func(cmd *cobra.Command, args []string) {
+    cmd.Parent().PersistentFlags().Set("justify", "center")
+    if !cmd.Parent().PersistentFlags().Changed("font") {
+      cmd.Parent().PersistentFlags().Set("font", "yazoox")
+    }
+    cmd.Parent().PersistentPreRunE(cmd.Parent(), []string{"date", "+%H:%m:%S"})
 		watchCmd.Run(watchCmd, []string{"date", "+%H:%m:%S"})
-		// watchCmd.Parent().Traverse([]string{"print", "watch", "date", "+%H:%m:%S"})
 	},
 }
 
 func init() {
-	// printCmd.AddCommand(clockCmd)
 	rootCmd.AddCommand(clockCmd)
-
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// clockCmd.PersistentFlags().String("foo", "", "A help for foo")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// clockCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
