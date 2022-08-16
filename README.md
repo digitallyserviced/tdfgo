@@ -1,7 +1,38 @@
-<img align="center" style="margin:6px;" src="./assets/tdf-logo.png">
+<h1 align="center">
+  <a href="https://github.com/digitallyserviced/tdfgo">
+    <!-- Please provide path to your logo here -->
+    <img align="center" style="margin:6px;" src="./assets/tdf-logo.png">
+  </a>
+</h1>
+
+<div align="center">
+TDFGO
+  <br />
+  <a href="#about"><strong>Explore the screenshots »</strong></a>
+  <br />
+  <br />
+  <a href="https://github.com/digitallyserviced/tdfgo/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  ·
+  <a href="https://github.com/digitallyserviced/tdfgo/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  .
+  <a href="https://github.com/digitallyserviced/tdfgo/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+</div>
+
+<div align="center">
+<br />
+
+[![Project license](https://img.shields.io/github/license/digitallyserviced/tdfgo.svg?style=flat-square)](LICENSE)
+
+[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/digitallyserviced/tdfgo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![code with love by digitallyserviced](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-digitallyserviced-ff1414.svg?style=flat-square)](https://github.com/digitallyserviced)
+
+</div>
 
 
-<img align="center" style="margin:6px;" src="./assets/tdfgocast.gif">
+
+<div align="center">
+<img style="margin:6px;" src="./assets/tdfgocast.gif">
+</div>
 
 ## tdfgo
 
