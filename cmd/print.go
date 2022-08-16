@@ -51,6 +51,7 @@ var printCmd = &cobra.Command{
 			fmt.Print(useFont.InfoString())
 			fmt.Println("")
 		}
+    SetFontOptions(useFont)
 		useFont.Print(argTxt)
 		return nil
 	},
