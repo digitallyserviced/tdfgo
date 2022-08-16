@@ -259,3 +259,4 @@ See [LICENSE](LICENSE) for more information.
 
 > [wezterm](https://github.com/wez/wezterm)
 
+> [roysac](http://roysac.com/)
