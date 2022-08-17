@@ -49,4 +49,4 @@ require (
 	golang.org/x/text v0.3.7
 )
 
-replace github.com/ivanpirog/coloredcobra => /home/chris/Documents/tdfgo/pkg/coloredcobra
+replace github.com/ivanpirog/coloredcobra => ./pkg/coloredcobra
