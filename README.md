@@ -263,10 +263,18 @@ See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgements
 
-> https://github.com/tat3r/tdfiglet
+> The CLI utility [tdfiglet](https://github.com/tat3r/tdfiglet) which introduced me to TheDraw fonts
 
-> [Neovim](https://github.com/neovim/neovim)
+> The great CLI editor [Neovim](https://github.com/neovim/neovim) which allows me to ditch a mouse
 
-> [wezterm](https://github.com/wez/wezterm)
+> The great [wezterm](https://github.com/wez/wezterm) terminal emulator which is beautiful and acts as my WM, status bar, modal dialogs, my everything...
 
-> [roysac](http://roysac.com/)
+> [RoySAC](http://roysac.com/) for [TheDraw Font File Spec](http://www.roysac.com/blog/2014/04/thedraw-fonts-file-tdf-specifications/) and fonts and other great info about ASCII/ANSI art. As well as his [Font Utility](https://sourceforge.net/p/ansi-text-editor/svn/HEAD/tree/ANSI-EditorSDK/Classes/Fonts/TDF/TDFFontFile.vb) which provided me some code insight into the font file definition.
+
+> [WAB Ansi Logo Maker](https://github.com/N0NameN0/WAB_Ansi_Logo_Maker/blob/main/index.php) which also had inisght into the TheDraw font spec in javascript
+
+> [textimg](https://github.com/jiro4989/textimg) for making renderings of the fonts in images
+
+> [asciinema](https://github.com/asciinema/asciinema) for the console recorder to make the preview gifs
+
+> [asciinema gif generator](https://github.com/asciinema/agg) for the asciinema asciicast gif generator
