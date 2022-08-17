@@ -278,3 +278,5 @@ See [LICENSE](LICENSE) for more information.
 > [asciinema](https://github.com/asciinema/asciinema) for the console recorder to make the preview gifs
 
 > [asciinema gif generator](https://github.com/asciinema/agg) for the asciinema asciicast gif generator
+
+> [EdenEast nightfox color schemes](https://github.com/EdenEast/nightfox.nvim) for terafox and carbonfox themes that all the images/gifs use as the wezterm console color schemes
