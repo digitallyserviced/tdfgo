@@ -39,6 +39,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Font Directories](#the-font-directories-searched)
 - [Usage](#usage)
   - [`Clock`](#clock)
   - [`Watch`](#watch)
@@ -117,6 +118,10 @@ cd tdfgo
 go build
 ./tdfgo fonts -vp -t YOURTEXT
 ```
+
+The utility searches [Font Directories](#the-font-directories-searched) for available fonts. Launch the utility from the cloned directory or copy fonts into one of the defined directories to be able to use them from anywhere. 
+
+> I plan to get an installer going soon.
 
 ## Usage
 
