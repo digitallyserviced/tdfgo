@@ -40,12 +40,17 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
+  - [`Clock`](#clock)
+  - [`Watch`](#watch)
+    - [Examples](#watch-examples)
+    - [Options](#watch-options)
+  - [`Fonts`](#fonts)
+    - [Examples](#fonts-examples)
+    - [Options](#fonts-options)
 - [Support](#support)
 - [Project assistance](#project-assistance)
 - [Contributing](#contributing)
 - [Authors & contributors](#authors--contributors)
-- [Security](#security)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -83,9 +88,9 @@
 > **[?]**
 > Please provide your screenshots here.
 
-|                               Home Page                               |                               Login Page                               |
+|                             Zsh / Bash / Fish Completion                               |                               Font Dump Verbose with Preview                               |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
+| <img src="assets/tdfgo-font-completion.png" width="100%"> | <img src="assets/tdfgo-font-dump-verbose.png" width="100%"> |
 
 </details>
 
@@ -151,7 +156,7 @@ Run a command every # interval and use the output as the text rendered using a f
 tdfgo watch [-i interval] CMD args... [flags]
 ```
 
-#### Examples
+#### `Watch` Examples
 
 ```
 # console clock
@@ -166,7 +171,7 @@ tdfgo watch 'cat /proc/loadavg | cut -d" " -f 1'
 
 ```
 
-#### Options
+#### `Watch` Options
 
 ```
   -h, --help                help for watch
@@ -183,7 +188,7 @@ List all available fonts found in the default directories
 tdfgo fonts [-v] [-p] [-t text] [-X] [pattern] 
 ```
 
-#### Examples
+#### `Fonts` Examples
 
 ```bash
 # list fonts with impact in name
@@ -200,7 +205,7 @@ tdfgo fonts -p
 tdfgo fonts -p -X -t "!@#$JDKALFK@{}"
 ```
 
-#### Options
+#### `Fonts` Options
 
 ```
   -X, --checkChars    Check fonts to see if they are missing any characters in the defined preview text
