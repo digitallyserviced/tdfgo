@@ -40,7 +40,7 @@ require (
 	github.com/go-cmd/cmd v1.4.1
 	github.com/gookit/color v1.5.1
 	github.com/gookit/goutil v0.5.8
-	github.com/digitallyserviced/pkg/coloredcobra v0.0.0-20220817202146-05c13c303c55
+	github.com/crinklywrappr/coloredcobra v1.0.3
 	github.com/mattn/go-shellwords v1.0.12
 	github.com/rivo/tview v0.0.0-20220805210617-37ad0bb93703
 	github.com/samber/lo v1.27.0
