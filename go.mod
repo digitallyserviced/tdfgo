@@ -24,7 +24,7 @@ require (
 )
 
 require (
-	github.com/crinklywrappr/coloredcobra v1.0.3
+	github.com/crinklywrappr/coloredcobra v1.0.4
 	github.com/gdamore/tcell/v2 v2.4.1-0.20210905002822-f057f0a857a1
 	github.com/go-cmd/cmd v1.4.1
 	github.com/gookit/color v1.5.1
