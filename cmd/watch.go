@@ -99,9 +99,9 @@ func StartScreen() {
 	Model.textView = tview.NewTextView()
 	Model.textView.SetDynamicColors(true)
 
-	Model.flexV.AddItem(nil, 0, 2, false)
+	Model.flexV.AddItem(nil, 0, 1, false)
 	Model.flexV.AddItem(Model.textView, 0, 4, false)
-	Model.flexV.AddItem(nil, 0, 2, false)
+	Model.flexV.AddItem(nil, 0, 1, false)
 }
 
 func RunCmd(cmd *cmd.Cmd) string {

@@ -42,6 +42,8 @@
   - [Font Directories](#the-font-directories-searched)
 - [Usage](#usage)
   - [`Clock`](#clock)
+  - [`Print`](#print)
+    - [Examples](#print-examples)
   - [`Watch`](#watch)
     - [Examples](#watch-examples)
     - [Options](#watch-options)
@@ -142,6 +144,26 @@ The utility searches [Font Directories](#the-font-directories-searched) for avai
   -v, --verbose          Print more information about fonts
 ```
 
+### `Print`
+
+![print preview](assets/tdfgo-print-user.png)
+
+Using the global font options render the supplied text to the console. Passing arguments to `print` or by piping text to stdin is how you define the text content.
+
+```bash
+tdfgo [flags] print "TEXT ARGS..."
+```
+
+#### `Print` Examples
+
+```
+# pass argument to print command with specified font and font index
+tdfgo -f carbonx -i 2 print `id -un`
+
+# pass argument via stdin and a random font used with details about it
+id -un | tdfgo -r -v print
+```
+
 ### `Clock`
 
 ![clock preview](assets/tdfgo-clock.png)
@@ -157,7 +179,7 @@ tdfgo -j center -f yazoox -i 3 clock
 
 Run a command every # interval and use the output as the text rendered using a font
 
-```
+```bash
 tdfgo watch [-i interval] CMD args... [flags]
 ```
 
