@@ -6,6 +6,7 @@ require github.com/ghostiam/binstruct v1.3.2
 
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
+	github.com/digitallyserviced/coloredcobra v0.0.0-20220825025536-3fde47d088fc // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/gdamore/encoding v1.0.0 // indirect
@@ -40,7 +41,6 @@ require (
 	github.com/go-cmd/cmd v1.4.1
 	github.com/gookit/color v1.5.1
 	github.com/gookit/goutil v0.5.8
-	github.com/ivanpirog/coloredcobra v1.0.1
 	github.com/mattn/go-shellwords v1.0.12
 	github.com/rivo/tview v0.0.0-20220805210617-37ad0bb93703
 	github.com/samber/lo v1.27.0
@@ -48,5 +48,3 @@ require (
 	github.com/spf13/viper v1.12.0
 	golang.org/x/text v0.3.7
 )
-
-replace github.com/ivanpirog/coloredcobra => ./pkg/coloredcobra

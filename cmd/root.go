@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"github.com/digitallyserviced/tdfgo/tdf"
-	cc "github.com/ivanpirog/coloredcobra"
+	cc "github.com/digitallyserviced/coloredcobra"
 	"github.com/samber/lo"
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
