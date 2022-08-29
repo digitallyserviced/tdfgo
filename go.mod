@@ -27,7 +27,7 @@ require (
 	github.com/digitallyserviced/coloredcobra v0.0.0-20220825025536-3fde47d088fc
 	github.com/gdamore/tcell/v2 v2.4.1-0.20210905002822-f057f0a857a1
 	github.com/go-cmd/cmd v1.4.1
-	github.com/gookit/color v1.5.1
+	github.com/gookit/color v1.5.2
 	github.com/gookit/goutil v0.5.8
 	github.com/rivo/tview v0.0.0-20220805210617-37ad0bb93703
 	github.com/samber/lo v1.27.0
