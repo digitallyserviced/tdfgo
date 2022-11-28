@@ -30,7 +30,7 @@ require (
 	github.com/gookit/color v1.5.1
 	github.com/gookit/goutil v0.5.8
 	github.com/rivo/tview v0.0.0-20220805210617-37ad0bb93703
-	github.com/samber/lo v1.27.0
+	github.com/samber/lo v1.36.0
 	github.com/spf13/cobra v1.5.0
 	golang.org/x/term v0.0.0-20220722155259-a9ba230a4035
 	golang.org/x/text v0.3.7
