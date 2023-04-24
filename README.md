@@ -88,8 +88,6 @@
 <summary>Screenshots</summary>
 <br>
 
-> **[?]**
-> Please provide your screenshots here.
 
 |                             Zsh / Bash / Fish Completion                               |                               Font Dump Verbose with Preview                               |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
